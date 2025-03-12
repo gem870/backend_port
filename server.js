@@ -18,9 +18,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 app.use(cors({
-    origin: "*", // Replace "*" with your frontend URL if needed
-    methods: "GET,POST,PUT,DELETE",
-    allowedHeaders: "Content-Type,Authorization"
+    origin: "*", // replace with your frontend URL if deployed
 }));
 
 // Routes
